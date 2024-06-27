@@ -1,0 +1,32 @@
+<html> 
+<head> 
+<script>
+    function zoom() {
+        document.body.style.zoom = "400%" 
+    }
+
+    var direcciones = ["C1.html", "C2.html", "C3.html", "C4.html", "C5.html", "C6.html", "C7.html"];
+    
+    function manejarSeleccion() {
+        var seleccion = document.getElementById("opciones").value;
+        if (seleccion === "aleatorio") {
+            var aleat = Math.floor(Math.random() * direcciones.length);
+            window.location = direcciones[aleat];
+        } else if (seleccion === "especifico") {
+            window.location = "/";
+        }
+    }
+</script> 
+</head>
+<body onload="zoom()">
+    <h6>
+        <div align="center">
+            <select id="opciones" onchange="manejarSeleccion()">
+                <option value="">Selecciona una opción</option>
+                <option value="aleatorio">Escala de C aleatoria</option>
+                <option value="especifico">Selecciona otra escala que quieras practicar</option>
+            </select>
+        </div>
+    </h6>
+</body>
+</html>

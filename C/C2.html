@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+    function zoom() {
+        document.body.style.zoom = "400%";
+    }
+
+    function preguntarYRedirigir() {
+        var acorde = prompt("De la escala de C, ¿a qué acorde pertenece el número 2?");
+        var nota = "Dm";
+
+        if (acorde === nota) {
+            alert("Verdadero");
+        } else {
+            alert("Falso");
+        }
+        window.location = "C.html"; // Redirige a C.html después de la respuesta
+    }
+</script>
+</head>
+<body onload="zoom()">
+    <script type="text/javascript">
+        preguntarYRedirigir(); // Llama a la función al cargar la página
+    </script>
+</body>
+</html>

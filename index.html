@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function MM_jumpMenu(targ,selObj,restore){
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+        function zoom() {
+            document.body.style.zoom = "400%" 
+        }
+
+</script>
+
+</head>
+<body onload="zoom()">
+<h6>
+<div align="center">
+<form name="form1" target="_blank">
+  <select "font-size: 180pt"; name="menu1" onChange="MM_jumpMenu('parent',this,0)">
+    	<option value="./C/C.html" selected>Escala de C</option>
+	<option value="./D/D.html" selected>Escala de D</option>
+	<option value="./E/E.html" selected>Escala de E</option>
+	<option value="./F/F.html" selected>Escala de F</option>
+	<option value="./G/G.html" selected>Escala de G</option>
+	<option value="./A/A.html" selected>Escala de A</option>
+	<option value="./B/B.html" selected>Escala de B</option>
+	<option value="./Db/Db.html" selected>Escala de C#</option>
+	<option value="https://vrcharles777.github.io/test_transponer/" selected>Selecciona la escala que quieras practicar</option>
+  </select>
+</form>
+</div>
+</h6>
+</body>
+</html> 

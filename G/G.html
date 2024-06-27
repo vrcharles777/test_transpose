@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<script>
+
+        function zoom() {
+            document.body.style.zoom = "400%" 
+        }
+
+    var direcciones = new Array("G1.html","G2.html","G3.html","G4.html", "G5.html", "G6.html", "G7.html")
+
+    function manejarSeleccion() {
+        var seleccion = document.getElementById("opciones").value;
+        if (seleccion === "aleatorio") {
+            var aleat = Math.floor(Math.random() * direcciones.length);
+            window.location = direcciones[aleat];
+        } else if (seleccion === "especifico") {
+            window.location = "/";
+        }
+    }
+</script> 
+</head>
+<body onload="zoom()">
+    <h6>
+        <div align="center">
+            <select id="opciones" onchange="manejarSeleccion()">
+                <option value="">Selecciona una opción</option>
+                <option value="aleatorio">Escala de G aleatoria</option>
+                <option value="especifico">Selecciona otra escala que quieras practicar</option>
+            </select>
+        </div>
+    </h6>
+</body>
+</html>

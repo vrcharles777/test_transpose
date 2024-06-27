@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+    function zoom() {
+        document.body.style.zoom = "400%";
+    }
+
+    function preguntarYRedirigir() {
+        var acorde = prompt("De la escala de D, ¿a qué acorde pertenece el número 6?");
+        var nota = "Bm";
+
+        if (acorde === nota) {
+            alert("Verdadero");
+        } else {
+            alert("Falso");
+        }
+        window.location = "D.html";
+    }
+</script>
+</head>
+<body onload="zoom()">
+    <script type="text/javascript">
+        preguntarYRedirigir(); // Llama a la función al cargar la página
+    </script>
+</body>
+</html>
